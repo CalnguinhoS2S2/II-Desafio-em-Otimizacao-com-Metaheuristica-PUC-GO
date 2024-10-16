@@ -73,7 +73,7 @@ As principais instâncias utilizadas foram:
 - *School at al* - 50 itens.
 - *Instâncias Aleatorias"* - 300.
 - *Instances_with_solution* - 1000 and 5245 itens.                                                    
-Retiradas do [BPPLib - A Bin Packing Problem Library](https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library).               
+Retiradas do [Repositorio do Desafio](https://drive.google.com/drive/folders/1qelSSRXSk_9MVkEyxTo1Ag3Zj1vdffcH).               
 E das Instances_with_solution [Drive](https://drive.google.com/file/d/118M0_fHnSQqAShxjJ72aGq_yhZsHwvlr/view?usp=sharing)
 
 
