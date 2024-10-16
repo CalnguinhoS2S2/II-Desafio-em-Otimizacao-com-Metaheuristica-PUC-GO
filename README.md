@@ -59,7 +59,7 @@ As Metaheurísticas observadas para resolução desse problema foram *Greedy Ran
       4. *Função de Transição:* perturbação para geral novas soluções a partir da solução atual.
       5. *Critério de Aceitação:* define se uma solução vai ser aceita ou não, de acordo com a temperatura e energia atual.
 
-      ![SA](SAA.png)
+      ![SA](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/SAA.png)
 
   - *VNS*
     - Trabalha com várias estruturas de vizinhanças e explora soluções entre essas vizinhanças, se uma vizinhança não gerar boas soluções, uma outra vizinhança com outra estrutura diferente pode ter gerar boas soluções. O *VNS* tem os seguintes passos:
@@ -73,4 +73,4 @@ As Metaheurísticas observadas para resolução desse problema foram *Greedy Ran
           - se não houver melhoria, o algoritmo aumenta o valor de *k*, expandindo a vizinhança e continuando a busca.
       6. *Critério de parada:* O algoritmo continua até que uma condição de parada seja atendida, como atingir um número máximo de iterações ou um limite de tempo.
 
-      ![VNS](vnss.png)
+      ![VNS](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/vnss.png)
