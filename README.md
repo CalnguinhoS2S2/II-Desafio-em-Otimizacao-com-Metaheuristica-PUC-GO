@@ -83,52 +83,52 @@ E a Instances_with_solution [Drive](https://drive.google.com/file/d/118M0_fHnSQq
 Das 3 metaheurísticas faladas, nós usamos apenas 2, *VNS* e o *GRASP*. Após uma análise comparativa dos algoritmos, constatou-se que o *SA*, embora eficiente em diversos cenários de otimização, não está proporcionando um desempenho adequado para este problema específico. O tempo de execução do *SA* foi consistentemente mais elevado, o que compromete a eficiência global da solução, especialmente em instâncias maiores e mais complexas. Além disso, os resultados finais de qualidade de solução foram inferiores quando comparados aos alcançados pelos algoritmos *GRASP* e *VNS*, que mostraram-se mais robustos e eficientes tanto em termos de tempo quanto de qualidade de soluções.
 
 # Resultados
-resposta 600_20000_DI_31
-Grasp: 
-tempo : 7.5 s
+resposta 600_20000_DI_31 <br>
+Grasp: <br>
+tempo : 7.5 s <br>
 resposta: 201
 
-VNS:
-tempo: 0.3 s
-resposta: 199
+VNS: <br>
+tempo: 0.3 s <br>
+resposta: 199 <br>
 
-resposta BPP_300_75_0.2_0.8_6
-Grasp: 
-tempo: 2.8 s
-resposta: 161
+resposta BPP_300_75_0.2_0.8_6<br>
+Grasp: <br>
+tempo: 2.8 s<br>
+resposta: 161<br>
 
-VNS:
-tempo: 0.1 s
-resposta: 155
+VNS:<br>
+tempo: 0.1 s<br>
+resposta: 155<br>
 
-resposta N1W4B1R7
-Grasp: 
-tempo: 0.1 s
-resposta: 6
+resposta N1W4B1R7<br>
+Grasp: <br>
+tempo: 0.1 s<br>
+resposta: 6<br>
 
-VNS:
-tempo: 0.1 s
-resposta: 6 
+VNS:<br>
+tempo: 0.1 s<br>
+resposta: 6 <br>
 
-resposta Instances_with_solution teste 8
-Resposta esperada = 406 
-Grasp: 
-tempo: 21.6
-resposta: 424
+resposta Instances_with_solution teste 8<br>
+Resposta esperada = 406 <br>
+Grasp: <br>
+tempo: 21.6<br>
+resposta: 424<br>
 
-VNS:
-tempo: 0.3 s
-resposta: 411
+VNS:<br>
+tempo: 0.3 s<br>
+resposta: 411<br>
 
-resposta Instances_with_solution teste 9
-Resposta esperada = 2099
-Grasp: 
-tempo: 11m 10 s
-resposta: 2206
+resposta Instances_with_solution teste 9<br>
+Resposta esperada = 2099<br>
+Grasp: <br>
+tempo: 11m 10 s<br>
+resposta: 2206<br>
 
-VNS:
-tempo: 4.4 s
-resposta: 2132
+VNS:<br>
+tempo: 4.4 s<br>
+resposta: 2132<br>
 
 # Motificações feitas nos algoritmos
 
