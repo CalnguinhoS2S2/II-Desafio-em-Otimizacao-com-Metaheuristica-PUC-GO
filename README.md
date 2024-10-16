@@ -11,9 +11,10 @@
     - [SA](#sa)
     - [VNS](#vns)
 
-# Equipe
+# Equipe - Operação Impossivel : Operação Gambiarra
 [![suehtaMFr](https://avatars.githubusercontent.com/u/104003912?size=100)](https://github.com/suehtaMFr)
 [![CalnguinhoS2S2](https://avatars.githubusercontent.com/u/126282504?size=100)](https://github.com/CalnguinhoS2S2)
+![imagem](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/foto.jpg)
 
 ### Descrição do Hardware e Software Utilizados
 #### Software:
