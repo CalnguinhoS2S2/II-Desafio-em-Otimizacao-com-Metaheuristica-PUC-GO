@@ -36,7 +36,7 @@ Retiradas do [BPPLib - A Bin Packing Problem Library](https://site.unibo.it/oper
 # Descrição do Problema:
 O problema de empacotamento de Itens(BPP, do inglês Bin Packing Problem) é um problema clássico de otimização combinatória. O objetivo desse problema é empacotar um número de itens de diferentes tamanhos em um numero minimo de caixas ou "bins", respeitando a capacidade máxima de cada caixa, por ser um problema NP-difícil, que significa que não existe um algoritmo eficiente que garanta uma solução ótima para grande instâncias do problema. Contudo, há várias abortagens heurísticas que são frequentemente usadas na prática, como as *Metaheurísticas*.
 
-## Metaheurísticas Testados:
+# Metaheurísticas Testados:
 As Metaheurísticas observadas para resolução desse problema foram *Greedy Randomized Adaptive Search Procedure(GRASP)*, *Simulated Annealing(SA)* e o *Variable Neighborhood Search(VNS)*.
 
   - *GRASP* 
