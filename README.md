@@ -1,4 +1,4 @@
-## II Desafio em Otimizacao com Metaheuristica PUC GO
+# II Desafio em Otimizacao com Metaheuristica PUC GO
 ## Sumário
 - [Equipe](#equipe)
 - [Descrição do Hardware e Software Utilizados](#descrição-do-hardware-e-software-utilizados)
@@ -16,20 +16,20 @@
 [![CalnguinhoS2S2](https://avatars.githubusercontent.com/u/126282504?size=100)](https://github.com/CalnguinhoS2S2)
 ![imagem](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/foto.jpg)
 
-### Descrição do Hardware e Software Utilizados
-#### Software:
+# Descrição do Hardware e Software Utilizados
+## Software:
 - *Visual Studio Code* foi utilizado.
 - O algoritmo foi testado em um sistema operacional *Windows 11 Pro*.
 
-#### Hardware:
+## Hardware:
 - *Processador:* Intel i5-6200U.
 - *Memória RAM:* 8 GB.
 - *HD:* 1 TB.
 
-### Descrição do Problema:
+# Descrição do Problema:
 O problema de empacotamento de Itens(BPP, do inglês Bin Packing Problem) é um problema clássico de otimização combinatória. O objetivo desse problema é empacotar um número de itens de diferentes tamanhos em um numero minimo de caixas ou "bins", respeitando a capacidade máxima de cada caixa, por ser um problema NP-difícil, que significa que não existe um algoritmo eficiente que garanta uma solução ótima para grande instâncias do problema. Contudo, há várias abortagens heurísticas que são frequentemente usadas na prática, como as *Metaheurísticas*.
 
-### Metaheurísticas Testados:
+# Metaheurísticas Testados:
 As Metaheurísticas observadas para resolução desse problema foram *Greedy Randomized Adaptive Search Procedure(GRASP)*, *Simulated Annealing(SA)* e o *Variable Neighborhood Search(VNS)*.
 
   - *GRASP* 
@@ -68,7 +68,7 @@ As Metaheurísticas observadas para resolução desse problema foram *Greedy Ran
 
       ![VNS](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/vnss.png)
 
-### Instâncias Utilizadas:
+# Instâncias Utilizadas:
 As principais instâncias utilizadas foram:
 - *Iori* - 601 itens.
 - *School at al* - 50 itens.
@@ -79,9 +79,90 @@ Retiradas do [Repositorio do Desafio](https://drive.google.com/drive/folders/1qe
 - *Instances_with_solution* - 1000 and 5245 itens.    
 E a Instances_with_solution [Drive](https://drive.google.com/file/d/118M0_fHnSQqAShxjJ72aGq_yhZsHwvlr/view?usp=sharing)
 
+# Meta-Heuristica Utilizadas
+Das 3 metaheurísticas faladas, nós usamos apenas 2, *VNS* e o *GRASP*. Após uma análise comparativa dos algoritmos, constatou-se que o *SA*, embora eficiente em diversos cenários de otimização, não está proporcionando um desempenho adequado para este problema específico. O tempo de execução do *SA* foi consistentemente mais elevado, o que compromete a eficiência global da solução, especialmente em instâncias maiores e mais complexas. Além disso, os resultados finais de qualidade de solução foram inferiores quando comparados aos alcançados pelos algoritmos *GRASP* e *VNS*, que mostraram-se mais robustos e eficientes tanto em termos de tempo quanto de qualidade de soluções.
 
-### Resultados 
+# Resultados
+resposta 600_20000_DI_31
+Grasp: 
+tempo : 7.5 s
+resposta: 201
 
-#### Meta-Heuristica Utilizadas
-	
+VNS:
+tempo: 0.3 s
+resposta: 199
 
+resposta BPP_300_75_0.2_0.8_6
+Grasp: 
+tempo: 2.8 s
+resposta: 161
+
+VNS:
+tempo: 0.1 s
+resposta: 155
+
+resposta N1W4B1R7
+Grasp: 
+tempo: 0.1 s
+resposta: 6
+
+VNS:
+tempo: 0.1 s
+resposta: 6 
+
+resposta Instances_with_solution teste 8
+Resposta esperada = 406 
+Grasp: 
+tempo: 21.6
+resposta: 424
+
+VNS:
+tempo: 0.3 s
+resposta: 411
+
+resposta Instances_with_solution teste 9
+Resposta esperada = 2099
+Grasp: 
+tempo: 11m 10 s
+resposta: 2206
+
+VNS:
+tempo: 4.4 s
+resposta: 2132
+
+# Motificações feitas nos algoritmos
+
+## *VNS*
+Parâmetros
+  - max_iterations: quantidade maxima que o codigo será rodada 
+
+Modificação
+    Escolha da vizinhança: Seleciona-se uma vizinhança específica, começando pelas mais próximas da solução atual.
+    Perturbação aleatória: Modifica-se aleatoriamente a solução atual dentro da vizinhança escolhida, buscando escapar de mínimos locais.
+    Busca local: A nova solução é refinada com uma busca local para tentar melhorá-la.
+    Atualização: Se a nova solução é melhor, ela se torna a solução atual; caso contrário, aumenta-se a vizinhança e o processo continua.
+
+Ordem de Funcionamento do Algoritmo *VNS*
+  1. Definição da Solução Inicial: O algoritmo começa com uma solução inicial que pode ser gerada aleatoriamente ou a partir de uma heurística específica.
+
+  2. Escolha da Estrutura de Vizinhança: Uma vizinhança é selecionada de um conjunto de estruturas de vizinhança predefinidas. A escolha começa com vizinhanças menores, que envolvem pequenas perturbações da solução atual.
+
+  3. Perturbação da Solução Atual: A solução atual é perturbada dentro da vizinhança escolhida, alterando-a de forma aleatória para explorar novas áreas do espaço de busca.
+
+  4 Busca Local na Nova Solução: Após a perturbação, a solução modificada passa por uma busca local, onde o algoritmo tenta encontrar melhorias dentro da vizinhança imediata da nova solução.
+
+  5. Atualização da Solução: Se a nova solução é melhor que a atual, ela substitui a solução anterior e o algoritmo retorna à primeira vizinhança. Caso contrário, o algoritmo aumenta a vizinhança para explorar áreas mais distantes.
+
+## *GRASP*
+Parâmetros
+  - max_iterations: quantidade maxima que o codigo será rodada
+
+Modificação
+    Buscal local: Seleciona uma caixa aleatoria e um item aleatorio dessa caixa e passa por todas as caixas e tenta colocar esse item em uma caixa, se a caixa que foi selecionada aleatoriamente ficar vazia, ela é removida da lista de caixas, enquanto houver como trocar tirar os itens de uma caixa o loop continua rodando.
+
+Ordem de Funcionamento do Algoritmo *GRASP*
+  1. Define uma Solução Gulosa: o algoritmo monta as caixas de acordo com a soma dos itens para não passar da capacidade, se passar uma nova caixa é criada e esse item é colocado dentro dela
+
+  2. Busca Local: otimiza a solução gulosa, pegando uma caixa aleatoria e um item dentro dessa caixa e tentando colocar ele em outra caixa, com o intuito de esvaziar essa caixa aleatoria
+
+  3. Atualização da solução: se a solução da busca local for melhor que a melhor solução atual, atualiza a melhor solução atual recebe solução da busca local
