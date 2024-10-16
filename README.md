@@ -48,7 +48,7 @@ As Metaheurísticas observadas para resolução desse problema foram *Greedy Ran
           - O algoritmo faz uma busca local para melhorar a solução construida inicialmente, onde a busca local tenta encontrar uma solução vizinha que tenha um valor melhor na função objetivo.
     - *Pseudocódigo*
 
-      ![grasp](GRASPP.png)
+      ![grasp](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/GRASPP.png)
 
   - *SA* 
     - Modelado para simular o recozimento de sólidos, onde adapta esse processo físico para resolver problemas de otimização, usando conceitos como:
