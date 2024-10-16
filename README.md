@@ -4,9 +4,9 @@
 - [Descrição do Hardware e Software Utilizados](#descrição-do-hardware-e-software-utilizados)
   - [Software](#software)
   - [Hardware](#hardware)
-  - [Instâncias Utilizadas](#instâncias-utilizadas)
-- [Descrição do Problema](#descrição-do-problema)
-  - [Metaheurísticas Usadas](#metaheurísticas-Usadas)
+  - [Instâncias Utilizadas](#instancias-utilizadas)
+- [Descrição do Problema](#descricao-do-problema)
+  - [Metaheurísticas Testadas](#metaheuristicas-testadas)
     - [GRASP](#grasp)
     - [SA](#sa)
     - [VNS](#vns)
@@ -15,28 +15,20 @@
 [![suehtaMFr](https://avatars.githubusercontent.com/u/104003912?size=100)](https://github.com/suehtaMFr)
 [![CalnguinhoS2S2](https://avatars.githubusercontent.com/u/126282504?size=100)](https://github.com/CalnguinhoS2S2)
 
-# Descrição do Hardware e Software Utilizados
-## Software:
+### Descrição do Hardware e Software Utilizados
+#### Software:
 - *Visual Studio Code* foi utilizado.
 - O algoritmo foi testado em um sistema operacional *Windows 11 Pro*.
 
-## Hardware:
-- *Processador:* AMD Ryzen 5 5600G.
-- *Memória RAM:* 32 GB.
-- *SSD:* 1 TB.
+#### Hardware:
+- *Processador:* Intel i5-6200U.
+- *Memória RAM:* 8 GB.
+- *HD:* 1 TB.
 
-# Instâncias Utilizadas:
-As principais instâncias utilizadas foram:
-- *Falkenauer*.
-- *Wäscher*.
-- *Hard28*.
-
-Retiradas do [BPPLib - A Bin Packing Problem Library](https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library)
-
-# Descrição do Problema:
+### Descrição do Problema:
 O problema de empacotamento de Itens(BPP, do inglês Bin Packing Problem) é um problema clássico de otimização combinatória. O objetivo desse problema é empacotar um número de itens de diferentes tamanhos em um numero minimo de caixas ou "bins", respeitando a capacidade máxima de cada caixa, por ser um problema NP-difícil, que significa que não existe um algoritmo eficiente que garanta uma solução ótima para grande instâncias do problema. Contudo, há várias abortagens heurísticas que são frequentemente usadas na prática, como as *Metaheurísticas*.
 
-# Metaheurísticas Testados:
+### Metaheurísticas Testados:
 As Metaheurísticas observadas para resolução desse problema foram *Greedy Randomized Adaptive Search Procedure(GRASP)*, *Simulated Annealing(SA)* e o *Variable Neighborhood Search(VNS)*.
 
   - *GRASP* 
@@ -74,3 +66,19 @@ As Metaheurísticas observadas para resolução desse problema foram *Greedy Ran
       6. *Critério de parada:* O algoritmo continua até que uma condição de parada seja atendida, como atingir um número máximo de iterações ou um limite de tempo.
 
       ![VNS](https://github.com/CalnguinhoS2S2/II-Desafio-em-Otimizacao-com-Metaheuristica-PUC-GO/blob/main/imagens/vnss.png)
+
+### Instâncias Utilizadas:
+As principais instâncias utilizadas foram:
+- *Iori* - 601 itens.
+- *School at al* - 50 itens.
+- *Instâncias Aleatorias"* - 300.
+- *Instances_with_solution* - 1000 and 5245 itens.
+Retiradas do [BPPLib - A Bin Packing Problem Library](https://site.unibo.it/operations-research/en/research/bpplib-a-bin-packing-problem-library)
+E das Instances_with_solution [Drive](https://drive.google.com/file/d/118M0_fHnSQqAShxjJ72aGq_yhZsHwvlr/view?usp=sharing)
+
+
+### Resultados 
+
+#### Meta-Heuristica Utilizadas
+	
+
